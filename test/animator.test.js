@@ -45,7 +45,7 @@ test('amimator prepare', () => {
     expect(anim.__to).toEqual(  {"scale.x": 0, "scale.y": 2, d: 1});
     anim.__clearSame();
     expect(anim.__to).toEqual(  {"scale.y": 2, d: 1});
-    expect(anim.__from).toEqual({"scale.y": 1, d: 7});
+    expect(anim.__from).toEqual({"scale.y": 1, d: 7, "scale.x": 0});
 });
 
 
