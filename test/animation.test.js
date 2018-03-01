@@ -69,3 +69,25 @@ test('test animation back', () => {
     anim.update(0.5);
     expect(obj.x).toEqual(0);
 });
+
+
+test('test string', () => {
+    var obj = {x: 10};
+    var anim = new Animation(obj, {
+        to: {
+            x: 0
+        },
+        strings: {
+            xVal: "x value is {x}"
+        },
+        time: 1
+    }).start();
+    expect(obj.x).toBe(10);
+    expect(obj.xVal).toBe("x value is 10");
+    anim.update(0.5);
+    expect(obj.x).toBe(5);
+    expect(obj.xVal).toBe("x value is 5");
+    anim.update(0.5);
+    expect(obj.x).toEqual(0);
+    expect(obj.xVal).toBe("x value is 0");
+});

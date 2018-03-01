@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "repository": "https://",
   "description": "Animator",
-  "license" : "MIT",
+  "license": "MIT",
   "keywords": [
     "es6",
     "animator"
@@ -15,6 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "format-unicorn": "^1.1.1",
     "lodash": "^4.17.5"
   },
   "devDependencies": {

@@ -12,7 +12,6 @@ export default class Parallel {
 
         if (obj !== undefined)
             this.params.obj = obj;
-
         this.params.animators = _.map(this.params.animators, anim => {
             if (anim instanceof Animator || anim.params)
                 return anim;
@@ -20,9 +19,11 @@ export default class Parallel {
                 return new Animator(_.extend(anim, {obj: this.params.obj}));
         });
         this.run = this.params.run;
+        if (this.run)
+            this.start();
     }
 
-    update(df) { //TODO: All Stoped
+    update(df) {
         if (!this.run)
             return;
         _.forEach(this.params.animators, a => a.update(df));
@@ -32,8 +33,10 @@ export default class Parallel {
     }
 
     __onComplete() {
-        if (this.params.onComplete && _.filter(this.params.animators, a => a.run === true).length === 0)
+        if (this.params.onComplete && _.filter(this.params.animators, a => a.run === true).length === 0) {
             this.params.onComplete(this);
+            this.run = false;
+        }
     }
 
     start() {

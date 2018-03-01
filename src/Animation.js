@@ -2,7 +2,7 @@
 
 import easing from './easing.js'
 import _ from 'lodash'
-
+import formatUnicorn from 'format-unicorn/safe'
 
 export default class Animation {
     constructor(obj, params={}){
@@ -13,7 +13,8 @@ export default class Animation {
             from: {},
             easing: easing.linear,
             run: false,
-            autoAdd: true
+            autoAdd: true,
+            strings: {}
         }, params);
         this.run = this.params.run;
         this.__dt = 0;
@@ -49,6 +50,10 @@ export default class Animation {
                 if (this.params.to[key] !== undefined) _.set(this.obj, key, this.params.easing(_dt, value, this.params.to[key] - value, this.params.time));
         });
 
+        _.forEach(this.params.strings, (value, key) => {
+            _.set(this.obj, key, formatUnicorn(value, this.obj));
+        });
+
         return {stop: this.__dt >= this.params.time, dt: this.__dt - _dt};
     }
 
@@ -74,5 +79,8 @@ export default class Animation {
 
     __apply(params) {
         _.forEach(params, (value,key) => _.set(this.obj, key, value));
+        _.forEach(this.params.strings, (value, key) => {
+            _.set(this.obj, key, formatUnicorn(value, this.obj));
+        });
     }
 }
