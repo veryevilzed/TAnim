@@ -91,3 +91,43 @@ test('test parallel object creation', () => {
     expect(obj).toEqual({x: 5, frame: 50});
 
 });
+
+
+test('test parallel complete', () => {
+
+    let obj = {
+        x: 10,
+        frame: 0
+    };
+    let complete = 0;
+    const anim = new Parallel({
+        obj: obj,
+        animators: [
+            {
+                animations: [
+                    { to: {x: 0} },
+                    { to: {x: 10} },
+                ],
+                loop: false
+            },
+            {
+                animations: [
+                    { to: {frame: 80}, time: 4 }
+                ],
+                loop: false
+            }
+        ],
+        onComplete: () => complete++
+    }).start();
+
+
+    anim.update(1);
+    expect(complete).toBe(0);
+    anim.update(1);
+    expect(complete).toBe(0);
+    anim.update(1);
+    expect(complete).toBe(0);
+    anim.update(1);
+    expect(complete).toBe(1);
+
+});

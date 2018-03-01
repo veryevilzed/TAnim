@@ -54,9 +54,11 @@ export default class Animator {
     }
 
     /** start animations */
-    start() {
+    start(onComplete) {
         if (this.params.animations.length === 0)
             return;
+        if (onComplete)
+            this.params.onComplete = onComplete;
         this.queue = _.map(this.params.animations, a => a);
         this.run = true;
         this.queue[0].start();

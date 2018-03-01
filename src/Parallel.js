@@ -7,7 +7,7 @@ export default class Parallel {
         this.params = _.extend({
             animators: [],
             run: false,
-            autoAdd: true
+            autoAdd: true,
         }, params);
 
         if (obj !== undefined)
@@ -26,11 +26,19 @@ export default class Parallel {
         if (!this.run)
             return;
         _.forEach(this.params.animators, a => a.update(df));
+        if (this.params.onUpdate)
+            this.params.onUpdate(this);
+
+    }
+
+    __onComplete() {
+        if (this.params.onComplete && _.filter(this.params.animators, a => a.run === true).length === 0)
+            this.params.onComplete(this);
     }
 
     start() {
         this.run = true;
-        _.forEach(this.params.animators, a => a.start());
+        _.forEach(this.params.animators, a => a.start(() => this.__onComplete() ));
         return this;
     }
 
