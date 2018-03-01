@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21e31c-4906-4553-8a2e-7fe590e67964" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/State.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/state.test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animation.js" afterPath="$PROJECT_DIR$/src/Animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parallel.js" afterPath="$PROJECT_DIR$/src/Parallel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/animation.test.js" afterPath="$PROJECT_DIR$/test/animation.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/base.test.js" afterPath="$PROJECT_DIR$/test/base.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/state.test.js" afterPath="$PROJECT_DIR$/test/state.test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="Animator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="45">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <element signature="e#15#37#0" expanded="true" />
               </folding>
@@ -35,10 +32,34 @@
       <file leaf-file-name="Animation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+            <state relative-caret-position="840">
+              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding>
                 <element signature="e#15#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/base.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="35" />
+              <folding>
+                <element signature="e#2#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animator.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/animator.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1123">
+              <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+              <folding>
+                <element signature="e#2#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,18 +85,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parallel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Parallel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="e#1#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="State.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/State.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="state.test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/state.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -101,8 +110,8 @@
       <file leaf-file-name="parallel.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
-              <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            <state relative-caret-position="271">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="45" />
               <folding>
                 <element signature="e#2#45#0" expanded="true" />
               </folding>
@@ -110,24 +119,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="animation.test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="animation.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/animation.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+            <state relative-caret-position="941">
+              <caret line="102" column="41" lean-forward="true" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animator.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/animator.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-              <folding>
-                <element signature="e#2#45#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -158,16 +155,16 @@
         <option value="$PROJECT_DIR$/src/AnimatorContainer.js" />
         <option value="$PROJECT_DIR$/test/animationcollection.test.js" />
         <option value="$PROJECT_DIR$/src/is-class.js" />
-        <option value="$PROJECT_DIR$/test/base.test.js" />
         <option value="$PROJECT_DIR$/test/animator.test.js" />
         <option value="$PROJECT_DIR$/src/Animator.js" />
         <option value="$PROJECT_DIR$/test/parallel.test.js" />
-        <option value="$PROJECT_DIR$/test/state.test.js" />
         <option value="$PROJECT_DIR$/src/Parallel.js" />
         <option value="$PROJECT_DIR$/src/State.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/Animation.js" />
+        <option value="$PROJECT_DIR$/test/base.test.js" />
         <option value="$PROJECT_DIR$/test/animation.test.js" />
+        <option value="$PROJECT_DIR$/src/Animation.js" />
+        <option value="$PROJECT_DIR$/test/state.test.js" />
       </list>
     </option>
   </component>
@@ -271,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.test string">
+  <component name="RunManager" selected="Jest.test string es6">
     <configuration name="All" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
@@ -358,35 +355,12 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="test animator events" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="base.test.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/animator.test.js" />
-      <test-names>
-        <test-name value="test animator events" />
-      </test-names>
-    </configuration>
-    <configuration name="test class" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
+      <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/test/base.test.js" />
-      <test-names>
-        <test-name value="test class" />
-      </test-names>
-    </configuration>
-    <configuration name="test easing" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/base.test.js" />
-      <test-names>
-        <test-name value="test easing" />
-      </test-names>
     </configuration>
     <configuration name="test parallel complete" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -396,6 +370,16 @@
       <test-file value="$PROJECT_DIR$/test/parallel.test.js" />
       <test-names>
         <test-name value="test parallel complete" />
+      </test-names>
+    </configuration>
+    <configuration name="test string es6" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/animation.test.js" />
+      <test-names>
+        <test-name value="test string es6" />
       </test-names>
     </configuration>
     <configuration name="test string" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
@@ -408,21 +392,31 @@
         <test-name value="test string" />
       </test-names>
     </configuration>
+    <configuration name="test template es6" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/base.test.js" />
+      <test-names>
+        <test-name value="test template es6" />
+      </test-names>
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jest.All" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.test easing" />
-      <item index="2" class="java.lang.String" itemvalue="Jest.test class" />
-      <item index="3" class="java.lang.String" itemvalue="Jest.test animator events" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.test parallel complete" />
-      <item index="5" class="java.lang.String" itemvalue="Jest.test string" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.test parallel complete" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.test string" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.base.test.js" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.test template es6" />
+      <item index="5" class="java.lang.String" itemvalue="Jest.test string es6" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.test string" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.test parallel complete" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.test animator events" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.test class" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.test easing" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.test string es6" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.test template es6" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.base.test.js" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.test string" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.test parallel complete" />
       </list>
     </recent_temporary>
   </component>
@@ -440,44 +434,44 @@
       <option name="presentableId" value="Default" />
       <updated>1519847175637</updated>
       <workItem from="1519847177049" duration="274000" />
-      <workItem from="1519847469423" duration="18068000" />
+      <workItem from="1519847469423" duration="19402000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_animator_events - 2018.03.01 at 14h 37m 16s.xml">
-      <configuration name="test animator events" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="base_test_js - 2018.03.01 at 16h 06m 42s.xml">
+      <configuration name="base.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_animator_events - 2018.03.01 at 14h 37m 35s.xml">
-      <configuration name="test animator events" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_string_es6 - 2018.03.01 at 16h 21m 24s.xml">
+      <configuration name="test string es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_class - 2018.03.01 at 14h 03m 47s.xml">
-      <configuration name="test class" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_string_es6 - 2018.03.01 at 16h 22m 38s.xml">
+      <configuration name="test string es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_class - 2018.03.01 at 14h 04m 05s.xml">
-      <configuration name="test class" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_string_es6 - 2018.03.01 at 16h 23m 38s.xml">
+      <configuration name="test string es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_class - 2018.03.01 at 14h 05m 27s.xml">
-      <configuration name="test class" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_string_es6 - 2018.03.01 at 16h 23m 50s.xml">
+      <configuration name="test string es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_parallel_complete - 2018.03.01 at 14h 52m 17s.xml">
-      <configuration name="test parallel complete" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_template_es6 - 2018.03.01 at 16h 15m 46s.xml">
+      <configuration name="test template es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_parallel_complete - 2018.03.01 at 14h 53m 03s.xml">
-      <configuration name="test parallel complete" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_template_es6 - 2018.03.01 at 16h 16m 00s.xml">
+      <configuration name="test template es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_parallel_complete - 2018.03.01 at 14h 53m 43s.xml">
-      <configuration name="test parallel complete" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_template_es6 - 2018.03.01 at 16h 16m 14s.xml">
+      <configuration name="test template es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_parallel_complete - 2018.03.01 at 14h 54m 54s.xml">
-      <configuration name="test parallel complete" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_template_es6 - 2018.03.01 at 16h 16m 28s.xml">
+      <configuration name="test template es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_string - 2018.03.01 at 15h 57m 23s.xml">
-      <configuration name="test string" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_template_es6 - 2018.03.01 at 16h 16m 35s.xml">
+      <configuration name="test template es6" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18342000" />
+    <option name="totallyTimeSpent" value="19676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3008" height="1692" extended-state="0" />
@@ -501,9 +495,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26190478" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41040102" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41040102" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13351315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -614,36 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/base.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="e#2#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/animator.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -686,34 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-          <folding>
-            <element signature="e#15#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/state.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/State.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -724,10 +660,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#15#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/base.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="e#2#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/animator.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1123">
+          <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/animation.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+        <state relative-caret-position="941">
+          <caret line="102" column="41" lean-forward="true" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="45" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/state.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>

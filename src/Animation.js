@@ -51,7 +51,10 @@ export default class Animation {
         });
 
         _.forEach(this.params.strings, (value, key) => {
-            _.set(this.obj, key, formatUnicorn(value, this.obj));
+            if (typeof value === "string")
+                _.set(this.obj, key, formatUnicorn(value, this.obj));
+            if (typeof value === "function")
+                _.set(this.obj, key, value(this.obj));
         });
 
         return {stop: this.__dt >= this.params.time, dt: this.__dt - _dt};
@@ -80,7 +83,10 @@ export default class Animation {
     __apply(params) {
         _.forEach(params, (value,key) => _.set(this.obj, key, value));
         _.forEach(this.params.strings, (value, key) => {
-            _.set(this.obj, key, formatUnicorn(value, this.obj));
+            if (typeof value === "string")
+                _.set(this.obj, key, formatUnicorn(value, this.obj));
+            if (typeof value === "function")
+                _.set(this.obj, key, value(this.obj));
         });
     }
 }

@@ -3,7 +3,7 @@
 import _ from 'lodash';
 import Parallel from '../src/Parallel.js';
 import easing from '../src/easing.js'
-import isClass from '../src/is-class.js'
+import formatUnicorn from 'format-unicorn/safe'
 
 test('test extend', () => {
     let param = {a: 5, to: {x: 10, scale: {x: 15}}};
@@ -22,9 +22,25 @@ test('test easing', () => {
     expect(easing.linear(0.5, 10, -10, 1)).toBe(5);
 });
 
-// function isClass(v) {
-//     return typeof v === 'function' && v.prototype.constructor === v;
-// }
+
+test('test unicorn', () => {
+    expect(formatUnicorn("{t}", {t: 5}) ).toBe("5");
+});
+
+
+test('test template es6', () => {
+    var obj = {
+        x: 100
+    };
+
+    var a = () => `hello ${obj.x}!`;
+
+    expect(a()).toBe("hello 100!");
+    obj.x = 500;
+    expect(a()).toBe("hello 500!");
+});
+
+
 
 test('test class', () => {
     var anim = new Parallel({});
