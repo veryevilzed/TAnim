@@ -38,5 +38,4 @@ test('test animator creation', () => {
     expect(obj).toEqual({x: 10, y: 15, scale: {x: 1, y:1}});
     anim.update(0.5);
     expect(obj).toEqual({x: 5, y: 15, scale: {x: 1.5, y:1}});
-
 });

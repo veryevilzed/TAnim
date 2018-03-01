@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21e31c-4906-4553-8a2e-7fe590e67964" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/parallel.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AnimatorContainer.js" afterPath="$PROJECT_DIR$/src/Parallel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animation.js" afterPath="$PROJECT_DIR$/src/Animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animator.js" afterPath="$PROJECT_DIR$/src/Animator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/animator.test.js" afterPath="$PROJECT_DIR$/test/animator.test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,21 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animator.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Animator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Animator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="481">
+              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -57,13 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimatorContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AnimatorContainer.js">
+      <file leaf-file-name="Parallel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Parallel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parallel.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
               <folding>
-                <element signature="e#1#31#0" expanded="true" />
+                <element signature="e#2#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="animator.test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="animator.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/animator.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+            <state relative-caret-position="615">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#2#45#0" expanded="true" />
               </folding>
@@ -114,11 +116,9 @@
       <file leaf-file-name="base.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/base.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="e#2#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="21" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +128,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -145,15 +146,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/TAnim.js" />
         <option value="$PROJECT_DIR$/jsdoc.json" />
-        <option value="$PROJECT_DIR$/test/parallel.test.js" />
         <option value="$PROJECT_DIR$/src/AnimatorContainer.js" />
         <option value="$PROJECT_DIR$/test/animationcollection.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/Animator.js" />
         <option value="$PROJECT_DIR$/test/animation.test.js" />
         <option value="$PROJECT_DIR$/test/base.test.js" />
         <option value="$PROJECT_DIR$/src/Animation.js" />
         <option value="$PROJECT_DIR$/test/animator.test.js" />
+        <option value="$PROJECT_DIR$/test/parallel.test.js" />
+        <option value="$PROJECT_DIR$/src/Parallel.js" />
+        <option value="$PROJECT_DIR$/src/Animator.js" />
       </list>
     </option>
   </component>
@@ -257,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.test animation back">
+  <component name="RunManager" selected="Jest.test parallel update">
     <configuration name="All" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
@@ -361,13 +363,6 @@
       <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/test/animator.test.js" />
     </configuration>
-    <configuration name="parallel.test.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/test/parallel.test.js" />
-    </configuration>
     <configuration name="test animation back" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
@@ -388,21 +383,31 @@
         <test-name value="test easing" />
       </test-names>
     </configuration>
+    <configuration name="test parallel update" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/parallel.test.js" />
+      <test-names>
+        <test-name value="test parallel update" />
+      </test-names>
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jest.All" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.parallel.test.js" />
-      <item index="2" class="java.lang.String" itemvalue="Jest.animator.test.js" />
-      <item index="3" class="java.lang.String" itemvalue="Jest.amimator add into TAnim" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.test animation back" />
-      <item index="5" class="java.lang.String" itemvalue="Jest.test easing" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.animator.test.js" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.amimator add into TAnim" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.test animation back" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.test easing" />
+      <item index="5" class="java.lang.String" itemvalue="Jest.test parallel update" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.test animation back" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.test easing" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.amimator add into TAnim" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.animator.test.js" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.parallel.test.js" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.test parallel update" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.test animation back" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.test easing" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.amimator add into TAnim" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.animator.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -420,20 +425,11 @@
       <option name="presentableId" value="Default" />
       <updated>1519847175637</updated>
       <workItem from="1519847177049" duration="274000" />
-      <workItem from="1519847469423" duration="9164000" />
+      <workItem from="1519847469423" duration="10096000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2018.02.28 at 21h 55m 24s.xml">
-      <configuration name="All" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="amimator_add_into_TAnim - 2018.02.28 at 21h 56m 40s.xml">
-      <configuration name="amimator add into TAnim" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="test_animation_back - 2018.03.01 at 12h 29m 48s.xml">
-      <configuration name="test animation back" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="test_animation_back - 2018.03.01 at 12h 33m 04s.xml">
       <configuration name="test animation back" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -446,18 +442,27 @@
     <history-entry file="test_animation_back - 2018.03.01 at 12h 35m 19s.xml">
       <configuration name="test animation back" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_easing - 2018.03.01 at 12h 32m 10s.xml">
-      <configuration name="test easing" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 50m 23s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_easing - 2018.03.01 at 12h 32m 29s.xml">
-      <configuration name="test easing" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 51m 30s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_easing - 2018.03.01 at 12h 32m 49s.xml">
-      <configuration name="test easing" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 52m 27s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 53m 25s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 53m 56s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="test_parallel_update - 2018.03.01 at 12h 54m 21s.xml">
+      <configuration name="test parallel update" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9438000" />
+    <option name="totallyTimeSpent" value="10370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="217" y="135" width="1817" height="1454" extended-state="0" />
@@ -481,9 +486,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31362274" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31287426" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41092813" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41092813" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22309859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -515,14 +520,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/easing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -570,24 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnimatorContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="e#1#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -604,20 +583,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/base.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="e#2#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/animation.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/parallel/test/js.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/base.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/animator.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/parallel.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding>
+            <element signature="e#2#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parallel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -632,21 +645,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animator.js">
+    <entry file="file://$PROJECT_DIR$/src/easing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/animator.test.js">
+    <entry file="file://$PROJECT_DIR$/src/Animator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-          <folding>
-            <element signature="e#2#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="481">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
