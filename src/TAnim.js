@@ -1,10 +1,38 @@
 //Main Point
 
-import AnimatorCollection from './AnimatorCollection.js'
+import _ from 'lodash'
+
+class AnimatorPool {
+
+    constructor() {
+        this.totalDf = 0;
+        this.animators = [];
+    }
+
+    add(animator){
+        this.animators.push(animator);
+        _.uniq(this.animators);
+    }
+
+
+    remove(animator){
+        _.remove(this.animators, animator);
+    }
+
+    count() {
+        return this.animators.length;
+    }
+
+    update(dt) {
+        this.totalDf += dt;
+        _.forEach(this.animators, a => a.update(dt));
+    }
+}
+
 
 export class TAnim {
     constructor(){
-        this.animators = new AnimatorCollection();
+        this.animators = new AnimatorPool();
     }
 
     update(df) {
@@ -15,7 +43,7 @@ export class TAnim {
         this.animators.add(animator);
     }
 
-    remove(aminator) {
+    remove(animator) {
         this.animators.remove(animator);
     }
 }
