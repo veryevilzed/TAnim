@@ -3,12 +3,15 @@ import _ from 'lodash'
 import Animator from './Animator.js';
 
 export default class Parallel {
-    constructor(params={}) {
+    constructor(params={}, obj=undefined) {
         this.params = _.extend({
             animators: [],
             run: false,
             autoAdd: true
         }, params);
+
+        if (obj !== undefined)
+            this.params.obj = obj;
 
         this.params.animators = _.map(this.params.animators, anim => {
             if (anim instanceof Animator || anim.params)
@@ -22,7 +25,6 @@ export default class Parallel {
     update(df) { //TODO: All Stoped
         if (!this.run)
             return;
-
         _.forEach(this.params.animators, a => a.update(df));
     }
 

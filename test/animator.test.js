@@ -39,3 +39,44 @@ test('test animator creation', () => {
     anim.update(0.5);
     expect(obj).toEqual({x: 5, y: 15, scale: {x: 1.5, y:1}});
 });
+
+
+test('test animator events', () => {
+    let obj = {
+        x: 10,
+        y: 15,
+        scale: { x: 1, y: 1}
+    };
+    let updated = 0;
+    let complete = 0;
+    const anim = new Animator({
+        animations: [
+            new Animation(obj, {
+                to: {
+                    x: 0,
+                    "scale.x": 2
+                }
+            }),
+            new Animation(obj, {
+                to: {
+                    x: 10,
+                    "scale.x": 1
+                }
+            }),
+        ],
+        loop: false,
+        onUpdate: () => updated++,
+        onComplete: () => complete++,
+    }).start();
+
+    expect(obj).toEqual({x: 10, y: 15, scale: {x: 1, y:1}});
+    anim.update(0.5);
+    expect(obj).toEqual({x: 5, y: 15, scale: {x: 1.5, y:1}});
+    expect(updated).toBe(1);
+    expect(complete).toBe(0);
+    anim.update(100);
+    expect(obj).toEqual({x: 10, y: 15, scale: {x: 1, y:1}});
+    expect(updated).toBe(3);
+    expect(complete).toBe(1);
+
+});

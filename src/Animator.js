@@ -30,11 +30,13 @@ export default class Animator {
             return;
 
         let {stop: stop, dt: ddt} = this.queue[0].update(dt);
+
         if (stop) {
             this.__shift();
             this.update(ddt);
         }
-
+        if (this.params.onUpdate && this.params.onUpdate instanceof Function)
+            this.params.onUpdate(this);
     }
 
     __shift() {
@@ -46,6 +48,8 @@ export default class Animator {
             this.queue[0].start();
         else {
             this.run = false;
+            if (this.params.onComplete && this.params.onComplete instanceof Function)
+                this.params.onComplete(this);
         }
     }
 
