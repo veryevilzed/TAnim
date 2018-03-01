@@ -39,7 +39,6 @@ export default class Animation {
         return this;
     }
 
-
     update(dt) {
         this.__dt += dt;
         let _dt = this.__dt;
@@ -53,17 +52,14 @@ export default class Animation {
         return {stop: this.__dt >= this.params.time, dt: this.__dt - _dt};
     }
 
-
     __getValues(obj, params, result={}) {
         return _.reduce(params, (r, value, key) => { r[key] = _.get(obj, key); return r; }, result)
     }
-
 
     __prepare() {
         this.params.from = this.__getValues(this.params.from, this.params.from,  this.__getValues(this.obj, this.params.to, {}) );
         this.params.to = this.__getValues(this.params.to, this.params.to, this.__getValues(this.params.from, this.params.from, {}));
     }
-
 
     __clearSame() {
         this.params.to = _.reduce(this.params.to, (res, val, key)=> {
