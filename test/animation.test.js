@@ -71,6 +71,39 @@ test('test animation back', () => {
 });
 
 
+test('test from', () => {
+    var obj = {x: 10};
+    var anim = new Animation(obj, {
+        from: {
+            x: 50
+        },
+        to: {
+            x: 0
+        },
+        time: 1
+    }).start();
+    expect(obj.x).toEqual(50);
+    anim.update(0.5);
+    expect(obj.x).toEqual(25);
+    anim.update(0.5);
+    expect(obj.x).toEqual(0);
+});
+
+
+test('test from time 0', () => {
+    var obj = {x: 10};
+    var anim = new Animation(obj, {
+        from: {
+            x: 50
+        },
+        time: 0
+    }).start();
+    expect(obj.x).toEqual(50);
+    anim.update(10);
+    expect(obj.x).toEqual(50);
+});
+
+
 test('test string', () => {
     var obj = {x: 10};
     var anim = new Animation(obj, {
