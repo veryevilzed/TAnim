@@ -1,5 +1,6 @@
 
 import _ from 'lodash'
+import Animator from './Animator.js';
 
 export default class Parallel {
     constructor(params={}) {
@@ -8,6 +9,13 @@ export default class Parallel {
             run: false,
             autoAdd: true
         }, params);
+
+        this.params.animators = _.map(this.params.animators, anim => {
+            if (anim instanceof Animator || anim.params)
+                return anim;
+            else
+                return new Animator(_.extend(anim, {obj: this.params.obj}));
+        });
         this.run = this.params.run;
     }
 

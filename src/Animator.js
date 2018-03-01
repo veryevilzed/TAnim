@@ -1,6 +1,7 @@
 'use strict';
 
 import _ from 'lodash'
+import Animation from './animation.js';
 
 /** Animator class. */
 export default class Animator {
@@ -11,6 +12,14 @@ export default class Animator {
             loop: false,
             autoAdd: true
         }, params);
+
+        this.params.animations = _.map(this.params.animations, anim => {
+            if (anim instanceof Animation || anim.params)
+                return anim;
+            else
+                return new Animation(this.params.obj, anim);
+        });
+
         this.queue = [];
         this.run = this.params.run;
     }
