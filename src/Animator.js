@@ -5,13 +5,16 @@ import Animation from './animation.js';
 
 /** Animator class. */
 export default class Animator {
-    constructor(params={}){
+    constructor(params={}, obj=undefined){
         this.params = _.extend({
             animations: [],
             run: false,
             loop: false,
             autoAdd: true
         }, params);
+
+        if (obj!==undefined)
+            this.params.obj = obj;
 
         this.params.animations = _.map(this.params.animations, anim => {
             if (anim instanceof Animation || anim.params)
