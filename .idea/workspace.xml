@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21e31c-4906-4553-8a2e-7fe590e67964" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/is-class.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animation.js" afterPath="$PROJECT_DIR$/src/Animation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/State.js" afterPath="$PROJECT_DIR$/src/State.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/animation.test.js" afterPath="$PROJECT_DIR$/test/animation.test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/state.test.js" afterPath="$PROJECT_DIR$/test/state.test.js" />
@@ -20,7 +19,7 @@
       <file leaf-file-name="Animator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="-425">
               <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <element signature="e#15#37#0" expanded="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="Animation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding>
                 <element signature="e#15#47#0" expanded="true" />
               </folding>
@@ -75,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="State.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/State.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="465">
+              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
               <folding>
                 <element signature="e#15#37#0" expanded="true" />
               </folding>
@@ -87,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="state.test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="state.test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/state.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="424">
+              <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -122,8 +121,8 @@
       <file leaf-file-name="animation.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/animation.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="289">
+              <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -161,10 +160,10 @@
         <option value="$PROJECT_DIR$/src/Parallel.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/base.test.js" />
-        <option value="$PROJECT_DIR$/src/Animation.js" />
-        <option value="$PROJECT_DIR$/test/animation.test.js" />
-        <option value="$PROJECT_DIR$/test/state.test.js" />
         <option value="$PROJECT_DIR$/src/State.js" />
+        <option value="$PROJECT_DIR$/test/animation.test.js" />
+        <option value="$PROJECT_DIR$/src/Animation.js" />
+        <option value="$PROJECT_DIR$/test/state.test.js" />
       </list>
     </option>
   </component>
@@ -267,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.test state switch">
+  <component name="RunManager" selected="Jest.test restart animation">
     <configuration name="All" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
@@ -374,6 +373,26 @@
         <test-name value="test from" />
       </test-names>
     </configuration>
+    <configuration name="test restart animation" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/animation.test.js" />
+      <test-names>
+        <test-name value="test restart animation" />
+      </test-names>
+    </configuration>
+    <configuration name="test state animations" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/state.test.js" />
+      <test-names>
+        <test-name value="test state animations" />
+      </test-names>
+    </configuration>
     <configuration name="test state switch" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$" />
@@ -384,41 +403,21 @@
         <test-name value="test state switch" />
       </test-names>
     </configuration>
-    <configuration name="test string es6" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/animation.test.js" />
-      <test-names>
-        <test-name value="test string es6" />
-      </test-names>
-    </configuration>
-    <configuration name="test template es6" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/base.test.js" />
-      <test-names>
-        <test-name value="test template es6" />
-      </test-names>
-    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jest.All" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.test template es6" />
-      <item index="2" class="java.lang.String" itemvalue="Jest.test string es6" />
-      <item index="3" class="java.lang.String" itemvalue="Jest.test state switch" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.test from" />
-      <item index="5" class="java.lang.String" itemvalue="Jest.test from time 0" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.test state switch" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.test from" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.test from time 0" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.test state animations" />
+      <item index="5" class="java.lang.String" itemvalue="Jest.test restart animation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.test state switch" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.test from time 0" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.test from" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.test string es6" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.test template es6" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.test restart animation" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.test state animations" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.test state switch" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.test from time 0" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.test from" />
       </list>
     </recent_temporary>
   </component>
@@ -436,44 +435,44 @@
       <option name="presentableId" value="Default" />
       <updated>1519847175637</updated>
       <workItem from="1519847177049" duration="274000" />
-      <workItem from="1519847469423" duration="20419000" />
+      <workItem from="1519847469423" duration="22257000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_from - 2018.03.01 at 18h 27m 23s.xml">
-      <configuration name="test from" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_restart_animation - 2018.03.01 at 18h 40m 08s.xml">
+      <configuration name="test restart animation" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_from_time_0 - 2018.03.01 at 18h 28m 09s.xml">
-      <configuration name="test from time 0" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_restart_animation - 2018.03.01 at 20h 06m 18s.xml">
+      <configuration name="test restart animation" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_from_time_0 - 2018.03.01 at 18h 28m 42s.xml">
-      <configuration name="test from time 0" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 34m 08s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 24m 15s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 35m 37s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 24m 24s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 36m 10s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 24m 58s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 36m 14s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 25m 35s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 36m 21s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 29m 31s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 38m 04s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="test_state_switch - 2018.03.01 at 18h 29m 46s.xml">
-      <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="test_state_animations - 2018.03.01 at 18h 38m 18s.xml">
+      <configuration name="test state animations" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
     <history-entry file="test_state_switch - 2018.03.01 at 18h 30m 13s.xml">
       <configuration name="test state switch" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20693000" />
+    <option name="totallyTimeSpent" value="22531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1985" height="1454" extended-state="0" />
@@ -497,9 +496,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26122755" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26122755" sideWeight="0.49802816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49026945" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49026945" sideWeight="0.49802816" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20380855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -642,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/base.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -690,39 +679,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animation.js">
+    <entry file="file://$PROJECT_DIR$/src/State.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+        <state relative-caret-position="465">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="10" />
           <folding>
-            <element signature="e#15#47#0" expanded="true" />
+            <element signature="e#15#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/animation.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="289">
+          <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#15#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/state.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="424">
+          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/State.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

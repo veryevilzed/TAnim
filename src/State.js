@@ -28,4 +28,9 @@ export default class State {
         this.current = name;
         return this;
     }
+
+    update(df) {
+        if (this.state)
+            this.state.update(df);
+    }
 }

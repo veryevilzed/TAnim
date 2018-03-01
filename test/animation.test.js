@@ -146,3 +146,19 @@ test('test string es6', () => {
     expect(obj.x).toEqual(0);
     expect(obj.xVal).toBe("x value is 0");
 });
+
+
+test('test restart animation', () => {
+
+    var obj = {x: 10};
+    var anim = new Animation(obj, {
+        to: { x: 0 },
+        time: 1
+    }).start();
+
+    expect(obj.x).toBe(10);
+    anim.update(0.5);
+    expect(obj.x).toBe(5);
+    anim.start();
+    expect(obj.x).toBe(5);
+});

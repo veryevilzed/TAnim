@@ -18,17 +18,15 @@ export default class Animation {
         }, params);
         this.run = this.params.run;
         this.__dt = 0;
-        this.__prepared = false;
+        this._from = {};
+        this._to = {};
     }
 
     start() {
         this.__apply(this.params.from);
         this.__dt = 0;
-        if (!this.__prepared){
-            this.__prepare();
-            this.__clearSame();
-            this.__prepared = true;
-        }
+        this.__prepare();
+        this.__clearSame();
         this.run = true;
         return this;
     }
@@ -45,9 +43,8 @@ export default class Animation {
         let _dt = this.__dt;
         if (_dt > this.params.time)
             _dt = this.params.time;
-
-        _.forEach(this.params.from, (value, key) => {
-                if (this.params.to[key] !== undefined) _.set(this.obj, key, this.params.easing(_dt, value, this.params.to[key] - value, this.params.time));
+        _.forEach(this._from, (value, key) => {
+                if (this.params.to[key] !== undefined) _.set(this.obj, key, this.params.easing(_dt, value, this._to[key] - value, this.params.time));
         });
 
         _.forEach(this.params.strings, (value, key) => {
@@ -65,13 +62,13 @@ export default class Animation {
     }
 
     __prepare() {
-        this.params.from = this.__getValues(this.params.from, this.params.from,  this.__getValues(this.obj, this.params.to, {}) );
-        this.params.to = this.__getValues(this.params.to, this.params.to, this.__getValues(this.params.from, this.params.from, {}));
+        this._from = this.__getValues(this.params.from, this.params.from,  this.__getValues(this.obj, this.params.to, {}) );
+        this._to = this.__getValues(this.params.to, this.params.to, this.__getValues(this.params.from, this.params.from, {}));
     }
 
     __clearSame() {
-        this.params.to = _.reduce(this.params.to, (res, val, key)=> {
-            if (this.params.from[key] === val){
+        this._to = _.reduce(this._to, (res, val, key)=> {
+            if (this._from[key] === val){
                 return res;
             }else{
                 res[key] = val;
