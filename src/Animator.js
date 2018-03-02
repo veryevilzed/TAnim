@@ -1,7 +1,7 @@
 'use strict';
 
 import _ from 'lodash'
-import Animation from './animation.js';
+import Animation from './Animation.js';
 
 /** Animator class. */
 export default class Animator {

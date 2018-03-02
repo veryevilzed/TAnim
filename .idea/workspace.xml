@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21e31c-4906-4553-8a2e-7fe590e67964" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tanim.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TAnim.js" afterPath="$PROJECT_DIR$/src/TAnim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Animator.js" afterPath="$PROJECT_DIR$/src/Animator.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,14 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Animator.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Animator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Animator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="61" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="61" />
-              <folding>
-                <element signature="e#15#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tanim.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tanim.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tanim.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -157,12 +153,12 @@
         <option value="$PROJECT_DIR$/test/base.test.js" />
         <option value="$PROJECT_DIR$/test/animation.test.js" />
         <option value="$PROJECT_DIR$/src/Animation.js" />
-        <option value="$PROJECT_DIR$/src/Animator.js" />
         <option value="$PROJECT_DIR$/src/State.js" />
         <option value="$PROJECT_DIR$/test/state.test.js" />
         <option value="$PROJECT_DIR$/src/TAnim.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tanim.js" />
+        <option value="$PROJECT_DIR$/src/Animator.js" />
       </list>
     </option>
   </component>
@@ -435,7 +431,7 @@
       <option name="presentableId" value="Default" />
       <updated>1519847175637</updated>
       <workItem from="1519847177049" duration="274000" />
-      <workItem from="1519847469423" duration="26639000" />
+      <workItem from="1519847469423" duration="26734000" />
     </task>
     <servers />
   </component>
@@ -472,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26913000" />
+    <option name="totallyTimeSpent" value="27008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="178" y="93" width="1636" height="1454" extended-state="0" />
@@ -707,16 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="61" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="61" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Animation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -749,6 +735,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
