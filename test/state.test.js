@@ -90,13 +90,11 @@ test('test simple state switch', () => {
     expect(obj).toEqual({x: 0});
     anim.change("state1");
     expect(obj).toEqual({x: 100});
-
 });
 
 
 
 test('test simple state animations', () => {
-
     var obj = {
         x: 10
     };
@@ -117,9 +115,7 @@ test('test simple state animations', () => {
     expect(obj).toEqual({x: 0});
     anim.update(1);
     expect(obj).toEqual({x: 0});
-
     anim.change("state1");
-
     expect(obj).toEqual({x: 0});
     anim.update(0.5);
     expect(obj).toEqual({x: 50});
@@ -133,6 +129,4 @@ test('test simple state animations', () => {
     expect(obj).toEqual({x: 50});
     anim.update(0.5);
     expect(obj).toEqual({x: 0});
-
-
 });

@@ -1,6 +1,11 @@
 //Main Point
 
 import _ from 'lodash'
+export Animation from './Animation';
+export Animator from './Animator';
+export Parallel from './Parallel';
+export State from './State';
+
 
 class AnimatorPool {
 
@@ -47,5 +52,7 @@ export class TAnim {
         this.animators.remove(animator);
     }
 }
+
+
 
 export default new TAnim();
