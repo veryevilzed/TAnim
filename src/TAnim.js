@@ -1,10 +1,11 @@
 //Main Point
 
 import _ from 'lodash'
-export Animation from './Animation';
-export Animator from './Animator';
-export Parallel from './Parallel';
-export State from './State';
+import Animation from './Animation.js';
+import Animator from './Animator.js';
+import Parallel from './Parallel.js';
+import State from './State.js';
+export { Animation, Animator,Parallel,State }
 
 
 class AnimatorPool {

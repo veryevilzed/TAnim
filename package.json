@@ -8,7 +8,7 @@
     "es6",
     "animator"
   ],
-  "main": "../src/TAnim.js",
+  "main": "tanim.js",
   "contributors": [
     "Dmitry Vysochin <dmitry.vysochin@gmail.com>"
   ],
