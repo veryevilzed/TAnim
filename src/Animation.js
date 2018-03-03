@@ -46,7 +46,7 @@ export default class Animation {
         _.forEach(this._from, (value, key) => {
                 if (typeof this.params.to[key] === "number") {
                     if (this.params.to[key] !== undefined) _.set(this.obj, key, this.params.easing(_dt, value, this._to[key] - value, this.params.time));
-                }else if (this.__dt >= this.params.time)
+                }else if (this.__dt >= this.params.time && this.params.to[key] !== undefined)
                     _.set(this.obj, key, this.params.to[key]);
         });
 

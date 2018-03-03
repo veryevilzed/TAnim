@@ -164,6 +164,33 @@ test('test restart animation', () => {
 });
 
 
+test('test set string', () => {
+    var obj = {x: "hi"};
+    var anim = new Animation(obj, {
+        from: { x: "world" },
+        time: 1
+    }).start();
+
+    expect(obj.x).toBe("world");
+    anim.update(1);
+    expect(obj.x).toBe("world");
+});
+
+
+test('test set bool', () => {
+    var obj = {x: false};
+    var anim = new Animation(obj, {
+        from: { x: true },
+        to: { x: false },
+        time: 1
+    }).start();
+
+    expect(obj.x).toBe(true);
+    anim.update(1);
+    expect(obj.x).toBe(false);
+});
+
+
 test('test leak', () => {
 
     var obj = {x: 10};
