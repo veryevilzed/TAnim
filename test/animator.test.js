@@ -3,6 +3,7 @@
 import Animation from "../src/Animation.js"
 import Animator from "../src/Animator.js"
 
+
 test('test animator creation', () => {
     let obj = {
         x: 10,
@@ -79,4 +80,30 @@ test('test animator events', () => {
     expect(updated).toBe(3);
     expect(complete).toBe(1);
 
+});
+
+
+test('test leak', () => {
+    var obj = {x: 10};
+    var anim = new Animator({
+        obj: obj,
+        animations: [
+            {from: {x: 0}, to: { x: 10 } },
+            {to: { x: 15 } },
+            {to: { x: 0 } }
+        ],
+        loop: true
+    }).start();
+
+    anim.start();
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    anim.update(1);
+    console.log(anim);
 });

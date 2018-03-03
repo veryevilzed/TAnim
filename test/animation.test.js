@@ -162,3 +162,18 @@ test('test restart animation', () => {
     anim.start();
     expect(obj.x).toBe(5);
 });
+
+
+test('test leak', () => {
+
+    var obj = {x: 10};
+    var anim = new Animation(obj, { from: {x: 10}, to: { x: 0 }, time: 1 }).start();
+    anim.start();
+    anim.update(1);
+    anim.stop();
+    //anim.stop();
+    anim.start();
+    anim.update(1);
+    anim.stop();
+    console.log(anim);
+});

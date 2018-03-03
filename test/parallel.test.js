@@ -3,6 +3,7 @@
 import Animation from "../src/Animation.js"
 import Animator from "../src/Animator.js"
 import Parallel from "../src/Parallel.js"
+import _ from 'lodash'
 
 test('test parallel update', () => {
     let obj = {
@@ -129,5 +130,56 @@ test('test parallel complete', () => {
     expect(complete).toBe(0);
     anim.update(1);
     expect(complete).toBe(1);
+
+});
+
+test('test parallel leek', () => {
+    var obj = {
+        x: 0,
+        y: 0,
+        scale: {x: 1, y: 1},
+        frame: 0,
+        texture: ""
+    };
+
+    var anim = new Parallel({
+        obj: obj,
+        animators: [
+            {
+                animations: [
+                    { to: {x:0, y:0}, from: {x:-300, y: -150 }},
+                    { to: {x: 300, y: 150} },
+                    { to: {x: 0, y: 0} },
+                    { to: {x: -300, y: -150} },
+                ],
+                loop: true
+            },
+            {
+                animations: [
+                    { to: { "scale.x": 1.5, "scale.y": 1.5}, time: 0.5, },
+                    { to: { "scale.x": 1, "scale.y": 1}, time: 0.5, }
+                ],
+
+                loop: true
+            },
+            {
+                animations: [
+                    { from: {frame: 1}, to: {frame: 69}, time: 1 },
+
+                ],
+                onUpdate: (animator) => {
+                    animator.params.obj.texture = `symbol_6_${_.padStart(Math.floor(animator.params.obj.frame), 5, "0")}.png`;
+                },
+                loop: true
+            }
+
+        ]
+    }).start();
+
+
+    for(var i=0;i<1000;i++){
+        anim.update(0.5);
+    }
+
 
 });
