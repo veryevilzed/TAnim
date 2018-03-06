@@ -1,8 +1,8 @@
 
 
-import Animation from "../src/Animation.js"
-import Animator from "../src/Animator.js"
-import Parallel from "../src/Parallel.js"
+import Animation from "./TAnimation.js"
+import Animator from "./TAnimator.js"
+import Parallel from "./TParallel.js"
 import _ from 'lodash'
 
 test('test parallel update', () => {

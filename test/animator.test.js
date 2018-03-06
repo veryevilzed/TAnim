@@ -1,7 +1,7 @@
 
 
-import Animation from "../src/Animation.js"
-import Animator from "../src/Animator.js"
+import Animation from "./TAnimation.js"
+import Animator from "./TAnimator.js"
 
 
 test('test animator creation', () => {

@@ -1,11 +1,11 @@
 'use strict';
 
 import _ from 'lodash'
-import Parallel from './Parallel.js'
-import Animation from "./Animation.js";
-import Animator from "./Animator";
+import Parallel from './TParallel.js'
+import TAnimation from "./TAnimation.js";
+import TAnimator from "./TAnimator";
 
-export default class State {
+export default class TState {
 
     constructor(params={}, obj) {
         this.states = _.reduce(params, (res, value, key) => {
@@ -15,10 +15,9 @@ export default class State {
                 if (value.animators)
                     res[key] = new Parallel(value, obj);
                 else if (value.animations)
-                    res[key] = new Animator(value, obj);
+                    res[key] = new TAnimator(value, obj);
                 else if (value.state)
-                    res[key] = new Animation(obj, { from: value.state });
-
+                    res[key] = new TAnimation(obj, { from: value.state });
             }
             return res;
         }, {});
@@ -26,6 +25,8 @@ export default class State {
         this.current = undefined;
         this.state = null;
     }
+
+
 
     change(name) {
         if (!this.states[name])

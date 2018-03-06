@@ -1,6 +1,6 @@
 
 import _ from 'lodash'
-import Animator from './Animator.js';
+import Animator from './TAnimator.js';
 
 export default class Parallel {
     constructor(params={}, obj=undefined) {

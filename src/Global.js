@@ -1,10 +1,10 @@
 //Main Point
 
 import _ from 'lodash'
-import Animation from './Animation.js';
-import Animator from './Animator.js';
-import Parallel from './Parallel.js';
-import State from './State.js';
+import Animation from './TAnimation.js';
+import Animator from './TAnimator.js';
+import Parallel from './TParallel.js';
+import State from './TState.js';
 export { Animation, Animator,Parallel,State }
 
 

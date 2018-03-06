@@ -1,10 +1,10 @@
 'use strict';
 
 import _ from 'lodash'
-import Animation from './Animation.js';
+import TAnimation from './TAnimation.js';
 
-/** Animator class. */
-export default class Animator {
+/** TAnimator class. */
+export default class TAnimator {
     constructor(params={}, obj=undefined){
         this.params = _.extend({
             animations: [],
@@ -17,10 +17,10 @@ export default class Animator {
             this.params.obj = obj;
 
         this.params.animations = _.map(this.params.animations, anim => {
-            if (anim instanceof Animation || anim.params)
+            if (anim instanceof TAnimation || anim.params)
                 return anim;
             else
-                return new Animation(this.params.obj, anim);
+                return new TAnimation(this.params.obj, anim);
         });
 
         this.queue = [];

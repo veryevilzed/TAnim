@@ -4,7 +4,7 @@ import easing from './easing.js'
 import _ from 'lodash'
 import formatUnicorn from 'format-unicorn/safe'
 
-export default class Animation {
+export default class TAnimation {
     constructor(obj, params={}){
         this.obj=obj;
         this.params = _.extend({
