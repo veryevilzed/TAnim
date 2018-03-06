@@ -1,7 +1,7 @@
 
 
 import _ from 'lodash';
-import Parallel from './TParallel.js';
+import Parallel from '../src/TParallel.js';
 import easing from '../src/easing.js'
 import formatUnicorn from 'format-unicorn/safe'
 

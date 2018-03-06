@@ -1,5 +1,5 @@
 
-import Animation from "./TAnimation.js"
+import Animation from "../src/TAnimation.js"
 
 test('test animation creation', () => {
     var anim = new Animation({}, {

@@ -1,6 +1,6 @@
 "use strict";
 
-import State from './TState.js';
+import State from '../src/TState.js';
 
 test('test state switch', () => {
 
