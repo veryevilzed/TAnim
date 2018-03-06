@@ -1,11 +1,11 @@
 //Main Point
 
 import _ from 'lodash'
-import Animation from './TAnimation.js';
-import Animator from './TAnimator.js';
-import Parallel from './TParallel.js';
-import State from './TState.js';
-export { Animation, Animator,Parallel,State }
+import TAnimation from './TAnimation.js';
+import TAnimator from './TAnimator.js';
+import TParallel from './TParallel.js';
+import TState from './TState.js';
+export { TAnimation, TAnimator, TParallel, TState }
 
 
 class AnimatorPool {
